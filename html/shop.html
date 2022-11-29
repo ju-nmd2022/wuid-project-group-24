@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/shop.css" />
+  </head>
+  <body>
+    <button id="test1" onClick="openModal(id);">test1</button>
+    <button id="test2" onClick="openModal(id);">test2</button>
+    <button id="test3" onClick="openModal(id);">test3</button>
+
+    <!--Modal screen-->
+    <div id="modal" class="modal">
+      <!--Modal content-->
+      <div id="content" class="modal-content" style="height: 500px">
+        <span class="close">&times;</span>
+        <div id="product"></div>
+      </div>
+    </div>
+
+    <script src="../js/shop.js"></script>
+  </body>
+</html>
