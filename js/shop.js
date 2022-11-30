@@ -1,8 +1,9 @@
+// Opens a modal for the product you clicked on
 function openModal(id) {
   var modal = document.getElementById("modal");
   var content = document.getElementById("content");
   var span = document.getElementsByClassName("close")[0];
-  var product = document.getElementById("product");
+  var details = document.getElementById("detail");
   var name = "";
   var text = "";
   var img = "";
@@ -11,7 +12,7 @@ function openModal(id) {
   modal.style.display = "block";
 
   // Remove previously added html to the modal-content
-  product.remove();
+  details.remove();
 
   // When the user clicks on <span> (x), close the modal
   span.onclick = function () {
@@ -59,7 +60,7 @@ function openModal(id) {
   content.insertAdjacentHTML(
     "beforeend",
     "<div id='product'>" +
-      "<div style='float: left; width: 30vw;'>" +
+      "<div style='float: left; width: 25vw; padding: 1vw;'>" +
       "<h1>" +
       name +
       "</h1>" +
@@ -67,11 +68,17 @@ function openModal(id) {
       text +
       "</p>" +
       "</div>" +
-      "<div style='float:left;'>" +
+      "<div style='float:left; padding: 1vw;'>" +
       "<img src='" +
       img +
       "' style='width: 20vw;' />" +
       "</div>" +
+      "<div style='padding: 1vw;'>" +
+      "<button><h3>Pick your plan</h3></button>" +
+      "</div>" +
       "</div>"
   );
 }
+
+// Goes to the plan page and selects this box
+function chooseBox(id) {}
