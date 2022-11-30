@@ -1,54 +1,101 @@
 .shop-grid {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   grid-template-areas:
-    "header header header"
+    "hero hero hero"
+    "content content content"
     ". display ."
     "footer footer footer";
 }
-.header {
-  grid-area: header;
+.hero {
+  grid-area: hero;
+  width: 100%;
+  height: 70vh;
+  border-bottom: 1px solid #1b1b1b;
+}
+.hero div {
+  position: relative;
+  top: 25%;
+  padding: 100px;
+}
+/* Hide hero section on phones */
+@media only screen and (max-width: 800px) {
+  .hero {
+    display: none;
+  }
+}
+.content {
+  grid-area: content;
 }
 .display {
   grid-area: display;
   margin: auto;
-  width: 70vw;
+  width: 80vw;
 }
 .footer {
   grid-area: footer;
 }
 
-/* Flexbox */
+/* Senses and search flexbox */
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+}
+.sense {
+  font-weight: bold;
+}
+/* Phone version */
+@media only screen and (max-width: 800px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+  .sense {
+    display: none;
+  }
+}
+
+/* Product flexbox */
 .products {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .products img {
   border-radius: 10%;
-  width: 14vw;
+  width: 350px;
 }
 .products div {
   margin: auto;
   text-align: center;
-  width: 16vw;
-  padding: 2vw;
+  width: 350px;
+  padding: 4vw;
+}
+.product h2,
+.product p {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 /* Phone version */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   .products {
     flex-direction: column;
   }
   .products img {
-    width: 40vw;
+    width: 45vw;
   }
   .products div {
-    padding: 10px;
-    width: 50vw;
+    padding: 30px;
+    width: 60vw;
   }
   .products p {
     display: none;
@@ -72,12 +119,19 @@
   position: relative;
   background: linear-gradient(#fffbf9 0%, #f8efe6 100%);
   margin: auto;
-  padding: 1em;
-  width: 50%;
+  padding: 20px;
+  width: 60%;
   animation-name: modalopen;
   animation-duration: 0.4s;
 }
-
+.modal-products div {
+  padding: 10px;
+  float: left;
+}
+.modal-detail > div {
+  width: 25vw;
+}
+/* Animations */
 @keyframes modalopen {
   from {
     top: -300px;
@@ -115,4 +169,17 @@
   color: #000000;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* icon background for div */
+.icon {
+  background-color: #eee5dc;
+  height: 10vw;
+  width: 10vw;
+  border: 0px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 15px;
 }

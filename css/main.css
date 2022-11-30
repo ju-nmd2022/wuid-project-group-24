@@ -19,7 +19,7 @@ h3 {
 }
 p {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 12pt;
+  font-size: 14pt;
   padding: 5px;
   margin: 0;
 }
@@ -36,7 +36,7 @@ h3 {
   padding: 8px;
 }
 /* Phone version */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   h1 {
     font-size: 28pt;
   }
@@ -49,17 +49,29 @@ h3 {
   }
 }
 
+/*
+button class for normal buttons.
+herobutton for the buttons on the hero section.
+*/
 button {
-  background-color: #e5d8ca;
   border: 0px;
-  border-radius: 30% 5%;
-  font-family: lust, serif;
-  font-style: italic;
   transition: background-color 0.3s;
   padding-left: 8px;
   padding-right: 8px;
+  margin-right: 20px;
 }
-
+.button {
+  background-color: #e5d8ca;
+  border: 0px;
+  border-radius: 20px 5px;
+}
+.herobutton {
+  background-color: rgba(255, 250, 246, 0.8);
+  border-radius: 10px;
+  text-align: left;
+  padding: 8px;
+  padding-right: 40px;
+}
 button:hover {
   background-color: #eee5dc;
 }

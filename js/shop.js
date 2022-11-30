@@ -57,10 +57,10 @@ function openModal(id) {
   }
 
   // Add modal-content html
-  content.insertAdjacentHTML(
+  /*content.insertAdjacentHTML(
     "beforeend",
     "<div id='product'>" +
-      "<div style='float: left; width: 25vw; padding: 1vw;'>" +
+      "<div style='float: left; width: 35vw; padding: 1vw;'>" +
       "<h1>" +
       name +
       "</h1>" +
@@ -74,7 +74,30 @@ function openModal(id) {
       "' style='width: 20vw;' />" +
       "</div>" +
       "<div style='padding: 1vw;'>" +
-      "<button><h3>Pick your plan</h3></button>" +
+      "<button class='button'><h3>Pick your plan</h3></button>" +
+      "</div>" +
+      "</div>"
+  );*/
+  content.insertAdjacentHTML(
+    "beforeend",
+    "<div id='product'>" +
+      "<div class='modal-detail'>" +
+      "<div>" +
+      "<h1>" +
+      name +
+      "</h1>" +
+      "<p>" +
+      text +
+      "</p>" +
+      "</div>" +
+      "<div>" +
+      "<img src='" +
+      img +
+      "' style='width: 20vw;' />" +
+      "</div>" +
+      "<div>" +
+      "<button class='button'><h3>Pick your plan</h3></button>" +
+      "</div>" +
       "</div>" +
       "</div>"
   );
