@@ -2,11 +2,6 @@
     padding-left: 30px;
 }
 
-.h2 {
-    font-family: lust, serif;
-    font-style: italic;
-}
-
 .container1 {
     display: flex;
     align-items: center;
@@ -34,7 +29,6 @@
   
   .text {
     font-size: 12px;
-    font-family: "Nunito Sans", sans-serif;
     padding-left: 30px;
     padding-right: 30px;
   }
