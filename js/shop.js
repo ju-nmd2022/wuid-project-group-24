@@ -39,9 +39,9 @@ function openModal(id) {
   // Text is the product description
   // img is the image url
   if (id == "test1") {
-    name = "This is test 1";
+    name = "Regular";
     text =
-      "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+      "The everyday regular food box offers both classic and exciting new dishes made with local, in-season ingredients. You can choose from 2-5 portions per serving between 20+ recipes each week. With the box comes the Smaksak app, monthly playlists and other surprises as well as a special invitation to the ambience lives.";
     img = "../images/smaksakbox1.png";
   } else if (id == "test2") {
     name = "This is test 2";

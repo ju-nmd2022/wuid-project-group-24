@@ -1,0 +1,39 @@
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: #E5D8CA;
+    font-family: "Nunito Sans", sans-serif;
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 10px; /* Add a top margin */
+    margin-bottom: 10px; /* Bottom margin */
+    /* border-radius: 3px; */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #E5D8CA;
+    font-family: lust, serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #1B1B1B;
+    padding: 12px 20px;
+    border: #EEE5DC;
+    border-radius: 15% 0%;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a different color */
+  input[type=submit]:hover {
+    background-color: #EEE5DC;
+    color: #1B1B1B;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+  /* Add some padding around the form */
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  }
