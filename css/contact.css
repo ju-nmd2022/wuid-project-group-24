@@ -12,6 +12,15 @@
     align-items: center;
     justify-content: center
   }
+
+  /* Style the form icons */
+.icon {
+    padding: 10px;
+    background: none;
+    color: #1B1B1B;
+    min-width: 50px;
+    text-align: center;
+  }
   
   img {
     max-width: 75%;
