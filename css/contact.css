@@ -1,3 +1,12 @@
+.h1 {
+    padding-left: 30px;
+}
+
+.h2 {
+    font-family: lust, serif;
+    font-style: italic;
+}
+
 .container1 {
     display: flex;
     align-items: center;
@@ -5,18 +14,20 @@
   }
   
   img {
-    max-width: 65%
+    max-width: 75%;
+    border-radius: 5% 5%;
   }
   
   .image {
-    flex-basis: 100%
+    flex-basis: 100%;
+    padding-left: 30px;
   }
   
   .text {
-    font-size: 15px;
+    font-size: 12px;
     font-family: "Nunito Sans", sans-serif;
     padding-left: 30px;
-    padding-right: 80px;
+    padding-right: 30px;
   }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -57,7 +68,7 @@ input[type=text], select, textarea {
   /* Add some padding around the form */
   .container {
     border-radius: 5px;
-    padding: 20px;
+    padding: 30px;
   }
 
   /* Style the form - display items horizontally */
