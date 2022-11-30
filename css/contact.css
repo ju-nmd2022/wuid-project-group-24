@@ -1,8 +1,9 @@
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
+    align-items: center;
     padding: 12px; /* Some padding */
-    border: #E5D8CA;
+    border: none;
     font-family: "Nunito Sans", sans-serif;
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 10px; /* Add a top margin */
@@ -19,7 +20,7 @@ input[type=text], select, textarea {
     font-size: 0.9rem;
     color: #1B1B1B;
     padding: 12px 20px;
-    border: #EEE5DC;
+    border: none;
     border-radius: 15% 0%;
     cursor: pointer;
   }
@@ -37,3 +38,15 @@ input[type=text], select, textarea {
     border-radius: 5px;
     padding: 20px;
   }
+
+  /* Style the form - display items horizontally */
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  
+  /* Add some margins for each label */
+  /* .form-inline label {
+    margin: 5px 10px 5px 0;
+  } */
