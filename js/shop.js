@@ -4,6 +4,7 @@ function openModal(id) {
   var content = document.getElementById("content");
   var span = document.getElementsByClassName("close")[0];
   var details = document.getElementById("detail");
+  var id = id;
   var name = "";
   var text = "";
   var img = "";
@@ -39,69 +40,103 @@ function openModal(id) {
   // Name is the name of the box
   // Text is the product description
   // img is the image url
-  if (id == "test1") {
-    name = "Regular";
+  if (id == "regular") {
+    name = "The regular box";
     text =
       "The everyday regular food box offers both classic and exciting new dishes made with local, in-season ingredients. You can choose from 2-5 portions per serving between 20+ recipes each week. With the box comes the Smaksak app, monthly playlists and other surprises as well as a special invitation to the ambience lives.";
     img = "../images/smaksakbox1.png";
-  } else if (id == "test2") {
-    name = "This is test 2";
+  } else if (id == "vegetarian") {
+    name = "The vegetarian box";
     text =
       "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
     img = "../images/smaksakbox1.png";
-  } else if (id == "test3") {
-    name = "This is test 3";
+  } else if (id == "vegan") {
+    name = "The vegan box";
+    text =
+      "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+    img = "../images/smaksakbox1.png";
+  } else if (id == "family") {
+    name = "The family box";
+    text =
+      "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+    img = "../images/smaksakbox1.png";
+  } else if (id == "allergy-friendly") {
+    name = "The allergy friendly box";
+    text =
+      "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+    img = "../images/smaksakbox1.png";
+  } else if (id == "premium") {
+    name = "The premium box";
+    text =
+      "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+    img = "../images/smaksakbox1.png";
+  } else if (id == "pescetarian") {
+    name = "The pescetarian box";
+    text =
+      "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+    img = "../images/smaksakbox1.png";
+  } else if (id == "carnitarian") {
+    name = "The carnitarian box";
+    text =
+      "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+    img = "../images/smaksakbox1.png";
+  } else if (id == "low-carb") {
+    name = "The low carb box";
+    text =
+      "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+    img = "../images/smaksakbox1.png";
+  } else if (id == "holiday") {
+    name = "The holiday box";
+    text =
+      "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+    img = "../images/smaksakbox1.png";
+  } else if (id == "animal-friendly") {
+    name = "The animal friendly box";
+    text =
+      "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
+    img = "../images/smaksakbox1.png";
+  } else if (id == "weekend") {
+    name = "The weekend box";
     text =
       "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum";
     img = "../images/smaksakbox1.png";
   }
 
   // Add modal-content html
-  /*content.insertAdjacentHTML(
-    "beforeend",
-    "<div id='product'>" +
-      "<div style='float: left; width: 35vw; padding: 1vw;'>" +
-      "<h1>" +
-      name +
-      "</h1>" +
-      "<p>" +
-      text +
-      "</p>" +
-      "</div>" +
-      "<div style='float:left; padding: 1vw;'>" +
-      "<img src='" +
-      img +
-      "' style='width: 20vw;' />" +
-      "</div>" +
-      "<div style='padding: 1vw;'>" +
-      "<button class='button'><h3>Pick your plan</h3></button>" +
-      "</div>" +
-      "</div>"
-  );*/
   content.insertAdjacentHTML(
     "beforeend",
-    "<div id='product'>" +
-      "<div class='modal-detail'>" +
-      "<div>" +
+    "<div id='detail' style='min-height: 60vh;'>" +
+      "<div style='float: left; clear: right; padding: 1vw; max-width: 30vw;'>" +
       "<h1>" +
       name +
       "</h1>" +
       "<p>" +
       text +
       "</p>" +
+      "<br>" +
+      "<br>" +
+      "<br>" +
+      "<button class='button' onClick=" +
+      "chooseBox('" +
+      id +
+      "'); style='border-radius: 40px 10px;'><h2>Pick your plan</h2></button>" +
       "</div>" +
-      "<div>" +
+      "<div style='float:right; padding: 1vw;'>" +
       "<img src='" +
       img +
-      "' style='width: 20vw;' />" +
-      "</div>" +
-      "<div>" +
-      "<button class='button'><h3>Pick your plan</h3></button>" +
-      "</div>" +
+      "' style='width: 25vw;' />" +
       "</div>" +
       "</div>"
   );
 }
 
-// Goes to the plan page and selects this box
-function chooseBox(id) {}
+// Go to the process page and save the id
+function chooseBox(id) {
+  sessionStorage.setItem("boxplan", id);
+  window.open("../html/process.html");
+}
+
+// Change image when hovering box
+function changeImage(id, img) {
+  document.getElementById(id).src = img;
+}

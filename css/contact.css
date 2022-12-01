@@ -1,94 +1,97 @@
 .h1 {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 
 .container1 {
-    display: flex;
-    align-items: center;
-    justify-content: center
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  /* Style the form icons */
+/* Style the form icons */
 .icon {
-    padding: 10px;
-    background: none;
-    color: #1B1B1B;
-    min-width: 50px;
-    text-align: center;
-  }
-  
-  img {
-    max-width: 75%;
-    border-radius: 5% 5%;
-  }
-  
-  .image {
-    flex-basis: 100%;
-    padding-left: 30px;
-    clear: right;
-    float: right;
-  }
-  
-  .text {
-    font-size: 12px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+  padding: 10px;
+  background: none;
+  color: #1b1b1b;
+  min-width: 50px;
+  text-align: center;
+}
+
+img {
+  max-width: 75%;
+  border-radius: 5% 5%;
+  margin: 2vw;
+}
+
+.image {
+  flex-basis: 100%;
+  padding-left: 30px;
+  clear: right;
+  float: right;
+}
+
+.text {
+  font-size: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    align-items: center;
-    padding: 12px; /* Some padding */
-    border: none;
-    font-family: "Nunito Sans", sans-serif;
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 10px; /* Add a top margin */
-    margin-bottom: 10px; /* Bottom margin */
-    /* border-radius: 3px; */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: #E5D8CA;
-    font-family: lust, serif;
-    font-style: italic;
-    font-size: 0.9rem;
-    color: #1B1B1B;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 15% 0%;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a different color */
-  input[type=submit]:hover {
-    background-color: #EEE5DC;
-    color: #1B1B1B;
-    text-decoration: none;
-    cursor: pointer;
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  align-items: center;
+  padding: 12px; /* Some padding */
+  border: none;
+  font-family: "Nunito Sans", sans-serif;
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 10px; /* Add a top margin */
+  margin-bottom: 10px; /* Bottom margin */
+  /* border-radius: 3px; */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
-  
-  /* Add some padding around the form */
-  .container {
-    border-radius: 5px;
-    padding: 30px;
-  }
 
-  /* Style the form - display items horizontally */
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #e5d8ca;
+  font-family: lust, serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #1b1b1b;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 15% 0%;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a different color */
+input[type="submit"]:hover {
+  background-color: #eee5dc;
+  color: #1b1b1b;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add some padding around the form */
+.container {
+  border-radius: 5px;
+  padding: 30px;
+}
+
+/* Style the form - display items horizontally */
 .form-inline {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-  }
- 
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
 .information {
   font-family: "Nunito Sans", sans-serif;
   padding: 20px;
 }
 
-li:before{
-  color: #1B1B1B;
+li:before {
+  color: #1b1b1b;
   margin-right: 20px;
 }
