@@ -25,6 +25,8 @@
   .image {
     flex-basis: 100%;
     padding-left: 30px;
+    clear: right;
+    float: right;
   }
   
   .text {
@@ -81,12 +83,12 @@ input[type=text], select, textarea {
     align-items: center;
   }
  
-.text {
+.information {
   font-family: "Nunito Sans", sans-serif;
+  padding: 20px;
 }
 
 li:before{
-  content: "<i class="fa-solid fa-location-dot"></i>";
   color: #1B1B1B;
   margin-right: 20px;
 }
