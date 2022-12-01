@@ -80,8 +80,13 @@ input[type=text], select, textarea {
     flex-flow: row wrap;
     align-items: center;
   }
-  
-  /* Add some margins for each label */
-  /* .form-inline label {
-    margin: 5px 10px 5px 0;
-  } */
+ 
+.text {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+li:before{
+  content: "<i class="fa-solid fa-location-dot"></i>";
+  color: #1B1B1B;
+  margin-right: 20px;
+}
