@@ -1,24 +1,9 @@
-.h1 {
+.contactheader {
   padding-left: 30px;
 }
 
-.container1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Style the form icons */
-.icon {
-  padding: 10px;
-  background: none;
-  color: #1b1b1b;
-  min-width: 50px;
-  text-align: center;
-}
-
 img {
-  max-width: 75%;
+  max-width: 65%;
   border-radius: 5% 5%;
   margin: 2vw;
 }
@@ -32,7 +17,7 @@ img {
 
 .text {
   font-size: 12px;
-  padding-left: 30px;
+  padding-left: 20px;
   padding-right: 30px;
 }
 
@@ -88,10 +73,24 @@ input[type="submit"]:hover {
 
 .information {
   font-family: "Nunito Sans", sans-serif;
-  padding: 20px;
+  padding-top: 15px;
+}
+
+.headlineform {
+  padding-top: 50px;
+  padding-left: 30px;
+}
+
+li {
+  list-style: none;
+}
+
+li:not( :last-child) {
+  margin-bottom: 10px;
 }
 
 li:before {
+  content: "\f3c5";
   color: #1b1b1b;
   margin-right: 20px;
 }

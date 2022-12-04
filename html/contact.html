@@ -9,80 +9,36 @@
     <link rel="stylesheet" href="../css/contact.css" />
   </head>
   <body>
-    <h1 class="h1">Contact us</h1>
-      <!--
-      Old code:
-
-      <div class="information">
-          <ul>
-            <li>
-              <i class="fa-solid fa-location-dot"></i>
-              School of Engineering</li>
-          <br>
-          P.O Box 1026<br>
-          SE-551 11 Jönköping<br>
-          Sweden<br>
-          <br>
-          <li><b>Phone:</b> +46 (0)72 22 22 22</li><br>
-          <li><b>Email:</b> study@ju.se</li></i><br>
-          <b>Visiting address:</b>
-          Gjuterigatan 5, Building E, Jönköping<br>
-          <br>
-          <b>Delivery address:</b>
-          Gjuterigatan 5, 553 18 Jönköping<br>
-          </ul>
-      </div>
-      <img class="image">                                                                       (dont know what the purpose of this is)
-        <img src="../images/map.png">
-      
-      <div class="container">
-        <h2 class="h2">Just say hello!</h2>                                                     (class not defined or used i from what i saw)
-        <form action="action_page.php">
-          <label for="fname"></label>
-          <input type="text" id="fname" name="firstname" placeholder="First name">
-          <label for="lname"></label>
-          <input type="text" id="lname" name="lastname" placeholder="Last name">
-          <label for="email"></label>
-          <input type="text" id="email" name="email" placeholder="Email">
-          <label for="message"></label>
-          <textarea id="message" name="message" placeholder="Message" style="height:100px"></textarea>
-          <input type="submit" value="submit">
-        </form>
-      </div>
-    -->
-
-    <!-- 
-    Changed code:
-    -->
+    <h1 class="contactheader">Contact us</h1>
     <div class="information" style="float:left;"> <!-- Floats to the left -->
       <ul>
-        <li>
-          <i class="fa-solid fa-location-dot"></i>
-          School of Engineering</li>
+        <li class="list1">School of Engineering</li>
       <br>
       P.O Box 1026<br>
       SE-551 11 Jönköping<br>
       Sweden<br>
       <br>
-      <li><b>Phone:</b> +46 (0)72 22 22 22</li><br>
-      <li><b>Email:</b> study@ju.se</li></i><br>
+      <li class="list2"><b>Phone:</b> +46 (0)72 22 22 22</li><br>
+      <li class="list3"><b>Email:</b> study@ju.se</li><br>
       <b>Visiting address:</b>
       Gjuterigatan 5, Building E, Jönköping<br>
       <br>
       <b>Delivery address:</b>
       Gjuterigatan 5, 553 18 Jönköping<br>
+      <br>
+      <b>Open hours:</b><br>
+      Monday-Friday 10:00-17:00<br>
+      Saturday 12:00-15:00
       </ul>
-
-      <br /><br />
-      <h2>Just say hello!</h2>  <!-- Moved it here because it just works idk -->
+      <br>
+      <h2 class="headlineform">Just say hello!</h2>  <!-- Moved it here because it just works idk -->
     </div>
     <img src="../images/map.png" style="width: 45vw; float: right;"> <!-- Floats to the right -->
-
     <div class="container">
       <form action="action_page.php">
         <label for="fname"></label>
         <input type="text" id="fname" name="firstname" placeholder="First name">
-        <label for="lname"></label>
+        <label for="lname"></lab el>
         <input type="text" id="lname" name="lastname" placeholder="Last name">
         <label for="email"></label>
         <input type="text" id="email" name="email" placeholder="Email">
