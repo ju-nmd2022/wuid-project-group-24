@@ -3,9 +3,10 @@
 }
 
 img {
-  max-width: 65%;
+  max-width: 100%;
   border-radius: 5% 5%;
   margin: 2vw;
+  height: auto;
 }
 
 .image {
@@ -33,7 +34,6 @@ textarea {
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 10px; /* Add a top margin */
   margin-bottom: 10px; /* Bottom margin */
-  /* border-radius: 3px; */
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
@@ -60,7 +60,7 @@ input[type="submit"]:hover {
 
 /* Add some padding around the form */
 .container {
-  border-radius: 5px;
+  /* border-radius: 5% 5%; <--doesn't work... */
   padding: 30px;
 }
 
@@ -73,11 +73,11 @@ input[type="submit"]:hover {
 
 .information {
   font-family: "Nunito Sans", sans-serif;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 .headlineform {
-  padding-top: 50px;
+  padding-top: 490px;
   padding-left: 30px;
 }
 
