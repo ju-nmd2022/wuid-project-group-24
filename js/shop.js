@@ -8,6 +8,7 @@ function openModal(id) {
   var name = "";
   var text = "";
   var img = "";
+  let width = window.innerWidth;
 
   // Display modal
   modal.style.display = "block";
@@ -103,31 +104,90 @@ function openModal(id) {
   }
 
   // Add modal-content html
-  content.insertAdjacentHTML(
-    "beforeend",
-    "<div id='detail' style='min-height: 60vh;'>" +
-      "<div style='float: left; clear: right; padding: 1vw; max-width: 30vw;'>" +
-      "<h1>" +
-      name +
-      "</h1>" +
-      "<p>" +
-      text +
-      "</p>" +
-      "<br>" +
-      "<br>" +
-      "<br>" +
-      "<button class='button' onClick=" +
-      "chooseBox('" +
-      id +
-      "'); style='border-radius: 40px 10px;'><h2>Pick your plan</h2></button>" +
-      "</div>" +
-      "<div style='float:right; padding: 1vw;'>" +
-      "<img src='" +
-      img +
-      "' style='width: 25vw;' />" +
-      "</div>" +
-      "</div>"
-  );
+  // Phone version
+  if (width < 1400) {
+    content.insertAdjacentHTML(
+      "beforeend",
+      "<div id='detail' style='min-height: 60vh;'>" +
+        "<img src='" +
+        img +
+        "' style='width: 50vw;' />" +
+        "<h1>" +
+        name +
+        "</h1>" +
+        "<p>" +
+        text +
+        "</p>" +
+        "<br><br><br>" +
+        "<button class='button' onClick=" +
+        "chooseBox('" +
+        id +
+        "'); style='border-radius: 40px 10px;'><h2>Pick your plan</h2></button>" +
+        "<h2 class='hide-phone'>Examples of recipes to chose from</h2>" +
+        "<div class='recipes'>" +
+        "<div>" +
+        "<img src='../images/wild-rice-pilaf.jpg' />" +
+        "<h3>Wild rice pilaf</h3>" +
+        "</div>" +
+        "<div>" +
+        "<img src='../images/lentil-salad.jpg' />" +
+        "<h3>Lentil sallad</h3>" +
+        "</div>" +
+        "<div>" +
+        "<img src='../images/sofritas.jpg' />" +
+        "<h3>Sofritas</h3>" +
+        "</div>" +
+        "<div>" +
+        "<img src='../images/Roasted-VegetablesIMG_0415-760x1140.jpg' />" +
+        "<h3>Roasted vegetables</h3>" +
+        "</div>" +
+        "</div>" +
+        "</div>"
+    );
+  } else {
+    content.insertAdjacentHTML(
+      "beforeend",
+      "<div id='detail' style='min-height: 60vh;'>" +
+        "<div style='float: left; clear: right; padding: 1vw; max-width: 30vw;'>" +
+        "<h1>" +
+        name +
+        "</h1>" +
+        "<p>" +
+        text +
+        "</p>" +
+        "<br><br><br>" +
+        "<button class='button' onClick=" +
+        "chooseBox('" +
+        id +
+        "'); style='border-radius: 40px 10px;'><h2>Pick your plan</h2></button>" +
+        "</div>" +
+        "<div style='float:right; padding: 1vw;'>" +
+        "<img src='" +
+        img +
+        "' style='width: 25vw;' />" +
+        "</div>" +
+        "<h2 class='hide-phone'>Examples of recipes to chose from</h2>" +
+        "<div class='recipes'>" +
+        "<div>" +
+        "<img src='../images/wild-rice-pilaf.jpg' />" +
+        "<h3>Wild rice pilaf</h3>" +
+        "</div>" +
+        "<div>" +
+        "<img src='../images/lentil-salad.jpg' />" +
+        "<h3>Lentil sallad</h3>" +
+        "</div>" +
+        "<div>" +
+        "<img src='../images/sofritas.jpg' />" +
+        "<h3>Sofritas</h3>" +
+        "</div>" +
+        "<div>" +
+        "<img src='../images/Roasted-VegetablesIMG_0415-760x1140.jpg' />" +
+        "<h3>Roasted vegetables</h3>" +
+        "</div>" +
+        "</div>" +
+        "</div>"
+    );
+  }
 }
 
 // Go to the process page and save the id

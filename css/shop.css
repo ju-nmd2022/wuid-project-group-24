@@ -12,21 +12,21 @@
 }
 .hero {
   grid-area: hero;
+  background-image: url("../images/scaledhero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  width: 100%;
   height: 70vh;
   border-bottom: 1px solid #1b1b1b;
 }
 .hero div {
   position: relative;
-  top: 25%;
+  top: 20%;
   padding: 100px;
 }
-/* Hide hero section on phones */
-@media only screen and (max-width: 800px) {
-  .hero {
-    display: none;
-  }
+.hero div > p {
+  width: 40vw;
+  padding: 20px;
 }
 .content {
   grid-area: content;
@@ -54,15 +54,6 @@
 .sense {
   font-weight: bold;
 }
-/* Phone version */
-@media only screen and (max-width: 800px) {
-  .flex {
-    flex-wrap: wrap;
-  }
-  .sense {
-    display: none;
-  }
-}
 
 /* Product flexbox */
 .products {
@@ -86,21 +77,23 @@
   padding-left: 10px;
   padding-right: 10px;
 }
-/* Phone version */
-@media only screen and (max-width: 800px) {
-  .products {
-    flex-direction: column;
-  }
-  .products img {
-    width: 45vw;
-  }
-  .products div {
-    padding: 30px;
-    width: 60vw;
-  }
-  .products p {
-    display: none;
-  }
+
+/* Recipe flexbox */
+.recipes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.recipes div {
+  text-align: center;
+  padding: 10px;
+}
+.recipes img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .modal {
@@ -124,6 +117,8 @@
   width: 60%;
   animation-name: modalopen;
   animation-duration: 0.4s;
+  max-height: calc(100vh - 210px);
+  overflow-y: auto;
 }
 .modal-products div {
   padding: 10px;
@@ -183,4 +178,44 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 15px;
+}
+
+@media only screen and (max-width: 850px) {
+  .recipes {
+    display: none;
+  }
+
+  .products {
+    flex-direction: column;
+  }
+  .products img {
+    width: 45vw;
+  }
+  .products div {
+    padding: 30px;
+    width: 60vw;
+  }
+  .products p {
+    display: none;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+  }
+  .sense {
+    display: none;
+  }
+
+  .hero {
+    display: none;
+  }
+
+  .hide-phone {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .hero div > p {
+    width: 80vw;
+  }
 }
