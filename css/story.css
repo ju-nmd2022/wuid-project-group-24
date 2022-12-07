@@ -19,6 +19,28 @@ body{
     padding: 0px;
 }
 
+h1,
+h2,
+h3 {
+  font-family: lust, serif;
+  font-style: italic;
+  font-weight: 700;
+  margin: 0;
+}
+p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14pt;
+  padding: 5px;
+  margin: 0;
+}
+h1 {
+  font-size: 40pt;
+  padding: 20px;
+}
+h2 {
+  font-size: 20pt;
+  padding: 10px;
+}
 /*-----------Our Story styling------------*/
 #story{
 display: flex;
@@ -84,21 +106,9 @@ display: flex;
 flex-direction: column;
 }
 
-.story-text p {
-    color: grey;
-    font-size: 0.9rem;
-}
-
-.story-text .story-title {
-   font-size: 1.3rem; 
-   font-weight: 500;
-}
-
 .story-text p{
     display: -webkit-box;
     -webbkit-line-clamp: 3;
     -webbkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
     margin: 20px 0px;
 }
