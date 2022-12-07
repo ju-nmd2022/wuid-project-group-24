@@ -85,13 +85,3 @@ input[type="submit"]:hover {
 li {
   list-style: none;
 }
-
-li:not( :last-child) {
-  margin-bottom: 10px;
-}
-
-li:before {
-  content: "\f3c5";
-  color: #1b1b1b;
-  margin-right: 20px;
-}
