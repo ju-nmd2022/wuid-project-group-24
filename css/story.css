@@ -60,6 +60,7 @@ flex-direction: column;
 .story{
     margin: 20px;
     width: 500px;
+    height: 700px;
 }
 
 .story-img img{
