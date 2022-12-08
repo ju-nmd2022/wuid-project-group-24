@@ -75,3 +75,156 @@ button {
 button:hover {
   background-color: #eee5dc;
 }
+
+.footer {
+  min-height: 100vh;
+  display: grid;
+  justify-content: end;
+  align-content: end;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 100px;
+  background: #fffaf7;
+}
+
+footer .container-footer {
+  width: 100%;
+  display: grid;
+  /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
+  grid-gap: 20px;
+}
+
+footer .container-footer .social-media {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.footer-description {
+  max-width: 500px;
+}
+
+.social-media {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 50px);
+  grid-gap: 15px;
+}
+
+.social-media li {
+  list-style: none;
+}
+
+.social-media li a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: #eee5dc;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.social-media li a:hover {
+  background: #e6d8ca;
+}
+
+.social-media li .fa {
+  color: black;
+  font-size: 25px;
+}
+
+.meals {
+  position: relative;
+}
+
+.meals li {
+  list-style: none;
+}
+
+.meals li a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.meals li a:hover {
+  color: grey;
+}
+
+.discover {
+  position: relative;
+}
+
+.discover li {
+  list-style: none;
+}
+
+.discover li a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.discover li a:hover {
+  color: grey;
+}
+
+.more-info {
+  position: relative;
+}
+
+.more-info li {
+  list-style: none;
+}
+
+.more-info li a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.more-info li a:hover {
+  color: grey;
+}
+
+.contact {
+  position: relative;
+}
+
+.contact li {
+  list-style: none;
+}
+
+.contact li a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.contact li a:hover {
+  color: grey;
+}
+
+.logo-footer {
+  width: 180px;
+  position: absolute;
+  left: 160px;
+  bottom: 120px;
+}
+
+.flex-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.flex-footer div {
+  padding: 20px;
+}

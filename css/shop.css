@@ -12,7 +12,7 @@
 }
 .hero {
   grid-area: hero;
-  background-image: url("../images/scaledhero.png");
+  background-image: url("../images/shopheader.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
