@@ -1,21 +1,23 @@
 .heading {
-  /* padding-left: 30px; */
-  position: center;
+  padding-left: 30px;
+  /* position: center; */
 }
 
 img {
   max-width: 100%;
+  min-width: 50%;
   border-radius: 5% 5%;
   margin: 2vw;
   height: auto;
+  width: 500px;
 }
 
-.image {
+/* .image {
   flex-basis: 100%;
   padding-left: 30px;
   clear: right;
   float: right;
-}
+} */
 
 .text {
   font-size: 12px;
@@ -88,5 +90,17 @@ li {
 
 .information img {
   width: 700px; 
-  float: right;
+  /* float: right; */
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex div {
+  /* max-width: 50vw; */
+  min-width: 200px;
 }
