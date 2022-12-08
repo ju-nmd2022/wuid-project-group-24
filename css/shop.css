@@ -179,6 +179,10 @@
   border-bottom-right-radius: 5px;
   padding: 15px;
 }
+.icon i {
+  font-size: 4vw;
+  padding: 4vw 0;
+}
 
 @media only screen and (max-width: 850px) {
   .recipes {

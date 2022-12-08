@@ -193,7 +193,7 @@ function openModal(id) {
 // Go to the process page and save the id
 function chooseBox(id) {
   sessionStorage.setItem("boxplan", id);
-  window.open("../html/process.html");
+  window.open("../html/process.html", "_self");
 }
 
 // Change image when hovering box

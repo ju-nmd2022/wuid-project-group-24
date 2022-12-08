@@ -1,0 +1,27 @@
+body {
+  min-height: 100vh;
+}
+
+img {
+  border-radius: 15%;
+  width: 25vw;
+}
+
+.divider {
+  border-bottom: 1px solid black;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.flex > div {
+  margin: auto;
+}
+
+div {
+  padding: 20px;
+}
