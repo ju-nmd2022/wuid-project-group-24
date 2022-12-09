@@ -156,3 +156,62 @@ margin-left: -75px;
   max-width: 50vw;
   display: block;
 }
+/*Our Values*/
+.wrapper {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper h1 {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin-top: 30px;
+}
+
+.card {
+  min-height: 220px;
+  width: 320px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 4px;
+}
+
+.card i {
+  margin: 20px;
+}
+
+.card h2 {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.card p {
+  text-align: center;
+}
+
+@media(max-width: 991px){
+  .wrapper{
+    padding: 25px;
+  }
+  .content-box{
+    flex-direction: column;
+    width: 100%;
+  }
+  .card{
+    min-width: 300px;
+    margin: 10px auto;
+  }
+}
