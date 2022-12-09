@@ -75,7 +75,6 @@ button:hover {
   background-color: #eee5dc;
 }
 
-<<<<<<< Updated upstream
 footer {
   overflow-x: hidden;
 }
@@ -85,12 +84,6 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: left;
-=======
-footer .container-footer {
-  width: 100%;
-  display: grid;
-  grid-gap: 20px;
->>>>>>> Stashed changes
   background: #fffaf7;
 }
 
@@ -103,9 +96,6 @@ footer .container-footer {
   width: 500px;
 }
 
-<<<<<<< Updated upstream
-.footer-container div {
-=======
 .social-media li {
   list-style: none;
 }
@@ -132,7 +122,6 @@ footer .container-footer {
 }
 
 .meals {
->>>>>>> Stashed changes
   position: relative;
 }
 
@@ -182,7 +171,6 @@ footer .container-footer {
   font-size: 25px;
 }
 
-<<<<<<< Updated upstream
 .footer-logo {
   background: #fffaf7;
   width: 150px;
@@ -192,13 +180,6 @@ footer .container-footer {
   left: 120px;
   border-radius: 50%;
   box-sizing: content-box;
-=======
-.logo-footer {
-  width: 180px;
-  position: absolute;
-  left: 160px;
-  top: 4950px;
->>>>>>> Stashed changes
 }
 
 .footer-logo img {

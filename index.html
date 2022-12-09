@@ -7,8 +7,14 @@
     <title>Landing page</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <nav class="navbar">
@@ -16,11 +22,13 @@
         <div class="icon menu-btn">
           <i class="fas fa-bars"></i>
         </div>
-        <a href="index.html"><img class="logo" src="images/smaksak_logo.png" alt=""></a>
+        <a href="index.html"
+          ><img class="logo" src="images/smaksak_logo.png" alt=""
+        /></a>
         <div class="icons-navbar">
-        <a href=""><i class="fa fa-user"></i></a>
-        <a href=""><i class="fa fa-box"></i></a>
-      </div>
+          <a href=""><i class="fa fa-user"></i></a>
+          <a href=""><i class="fa fa-box"></i></a>
+        </div>
         <ul class="menu-list">
           <div class="icon cancel-btn">
             <i class="fas fa-times"></i>
@@ -38,19 +46,21 @@
       const navbar = document.querySelector(".navbar");
       const menuBtn = document.querySelector(".menu-btn");
       const cancelBtn = document.querySelector(".cancel-btn");
-      menuBtn.onclick = ()=>{
+      menuBtn.onclick = () => {
         navbar.classList.add("show");
         menuBtn.classList.add("hide");
         body.classList.add("disabled");
-      }
-      cancelBtn.onclick = ()=>{
+      };
+      cancelBtn.onclick = () => {
         body.classList.remove("disabled");
         navbar.classList.remove("show");
         menuBtn.classList.remove("hide");
-      }
-      window.onscroll = ()=>{
-        this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-      }
+      };
+      window.onscroll = () => {
+        this.scrollY > 20
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+      };
     </script>
     <div class="smaksakapp">
       <h1>Get more with the Smaksak app</h1>
@@ -160,4 +170,4 @@
       </div>
     </footer>
   </body>
-  </html>
+</html>
