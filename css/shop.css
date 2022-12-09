@@ -208,6 +208,12 @@
 
   .flex {
     flex-wrap: wrap;
+    padding: 10px;
+    padding-top: 60px;
+  }
+  .flex p {
+    font-size: 10px;
+    margin: 4px;
   }
   .sense {
     display: none;

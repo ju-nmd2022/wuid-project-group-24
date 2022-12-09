@@ -269,7 +269,7 @@ footer {
     display: block;
     padding: 40px 20px;
     text-align: left;
-    background: #fffaf7;
+    background: linear-gradient(#fffbf9 0%, #f8efe6 100%);
     transition: all 0.3s ease;
     margin: 0;
   }
@@ -290,4 +290,3 @@ footer {
     left: 80%;
   }
 }
-
