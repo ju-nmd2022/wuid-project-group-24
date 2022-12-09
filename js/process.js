@@ -109,7 +109,7 @@ window.onload = function () {
         "</div>" +
         "</div>" +
         "<div style='text-align: center;'>" +
-        "<button class='button' style='width: 25vw; height: 10vh; border-radius: 20px;' onClick='checkout();'><h2>Continue to checkout</h2></button>" +
+        "<button class='button' style='border-radius: 20px;' onClick='checkout();'><h2>Continue to checkout</h2></button>" +
         "</div>"
     );
   }

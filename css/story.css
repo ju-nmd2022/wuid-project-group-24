@@ -1,14 +1,14 @@
 /*-----------Basic CSS styling------------*/
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0px;
-    padding: 0px;
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
 h1,
@@ -34,50 +34,49 @@ h2 {
   padding: 10px;
 }
 /*-----------Our Story styling------------*/
-#story{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+#story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.story.heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.story.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.story-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0px;
-    flex-wrap: wrap;
-    border-radius: 15%;
+.story-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+  flex-wrap: wrap;
+  border-radius: 15%;
 }
 
-.story{
-    margin: 20px;
-    width: 500px;
-    height: 700px;
+.story {
+  margin: 20px;
+  width: 500px;
+  height: 700px;
 }
 
-.story-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 15%;
+.story-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15%;
 }
 
 .story-text {
-padding: 30px;
-display: flex;
-flex-direction: column;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
-.story-text p{
-    margin: 20px 0px;
+.story-text p {
+  margin: 20px 0px;
 }
-

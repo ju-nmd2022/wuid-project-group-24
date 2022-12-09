@@ -7,102 +7,208 @@
     <title>Landing page</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-   <!--Hero section starts here-->
-    <section id="hero">
-    <!--Container-->
-      <div class="container">
-    <!--Navbar starts here-->
-      <div class="navbar">
-        <label class="logo">
-        <i class="fa fa-bars"></i>
-      </label>
-      <div class="menu">
-        <ul>
-        <li><a href="hmtl/shop.html">Shop</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="html/story.html">Our Story</a></li>
-        <li><a href="html/contact.html">Contact</a></li>
-        <li><a href="#"></a><img src="../images/smaksak_logo.png" alt="smaksak-logo"></li>
-      </ul>
-      <div class="icons">
-      <a href="#"><i class="fa fa-user"></i></a>
-      <a href="#"><i class="fa fa-user"></i></a>
-    </div>
+    <nav class="navbar">
+      <div class="content">
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+        <a href="index.html"
+          ><img class="logo" src="images/smaksak_logo.png" alt=""
+        /></a>
+        <div class="icons-navbar">
+          <a href=""><i class="fa fa-user"></i></a>
+          <a href=""><i class="fa fa-box"></i></a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="html/shop.html">Shop</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="html/story.html">Our Story</a></li>
+          <li><a href="html/contact.html">Contact</a></li>
+        </ul>
       </div>
-      </div>
-      </div>
-      <!--Navbar ends here-->
-      <!--Hero section starts here-->
-      <div class="hero-section">
-        <h1 class="hero-slogan">Never not in season!</h1>
-      <p class="hero-description">Try the Dreamy December box for a glittery season.</p>
-      
-    <div class="herobutton">
-      <a href="html/shop.html">EXPLORE OUR BOXES</a></div>
+    </nav>
+    <div class="banner"></div>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = () => {
+        navbar.classList.add("show");
+        menuBtn.classList.add("hide");
+        body.classList.add("disabled");
+      };
+      cancelBtn.onclick = () => {
+        body.classList.remove("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+      };
+      window.onscroll = () => {
+        this.scrollY > 20
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+      };
+    </script>
+    <div class="smaksakapp">
+      <h1>Get more with the Smaksak app</h1>
+      <p>
+        As a monthly Smaksak subscriber you will now be able to keep everything
+        in one place. The newly released Smaksak app has everything you need.
+        All your recipes, earlier payments and boxes, playlists and more. Get it
+        now!
+      </p>
+      <img src="images/ios-android.png" style="width: 300px" />
     </div>
+    <div class="review-container">
+      <h1>Reviews</h1>
+      <div>
+        <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-star fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-star-half-o fa-2x" aria-hidden="true"></i>
+      </div>
+      <p>
+        Thanks to Smaksak I have gained an interest in making homecooked food in
+        a way I never thought I would. The playlist is the cherry on top and I
+        always find myself dancing in the kitchen whenever I cook.
+      </p>
+      <p>- Jane Doe, 24 year old student</p>
     </div>
-    
-<!--Footer-->
-<footer>
-<div class="container">
-<div class="footer-description">
-<h2>About Us</h2>
-<p>Smaksak is a food subscription delivery service based in Jönköping, Sweden. Founded by the Svensson brothers Max and Tim in 2012, it has become the go-to food delivery service companies in Scandinavia. Enjoy the small moments with us.
-</p>
-<ul class="social-media">
-<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-</ul>
-</div>
-<div class="meals">
-  <h2>Meals</h2>
-<ul>
-<li><a href="#">Meal box delivery</a></li>
-<li><a href="#">What is in your box?</a></li>
-<li><a href="#">Personalisation of a box</a></li>
-</ul>
-<h2>Get to know</h2>
-<ul>
-<li><a href="#">Box offer</a></li>
-<li><a href="#">Business Offers</a></li>
-<li><a href="#">Personalisation of a box</a></li>
-</ul>
-</div>
-<div class="discover">
-  <h2>Discover</h2>
-<ul>
-<li><a href="#">Shop</a></li>
-<li><a href="#">Our Story</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">Gift a box</a></li>
-<li><a href="#">Application</a></li>
-<li><a href="#">Membership</a></li>
-</ul>
-</div>
-<div class="more-info">
-  <h2>More info</h2>
-<ul>
-<li><a href="#">Meal box delivery</a></li>
-<li><a href="#">What is in your box?</a></li>
-<li><a href="#">Personalisation of a box</a></li>
-</ul>
-</div>
-<div class="contact">
-  <h2>Contact Us</h2>
-<ul>
-  <li><a href="#"><i class="fa fa-phone"></i> +46 722 222 222</li>
-    <li><a href="#"><i class="fa fa-phone"></i> Monday-Friday 10:00-17:00
-     <br> Saturday 12:00-15:00</li>
-  </ul>
-</li>
+<!--Our Values section-->
+<div class="wrapper">
+<h1>Our Values</h1>
+<div class="content-box">
+  <div class="card">
+    <i class="fa fa-user"></i>
+    <h2>Trust</h2>
+    <p>To put our costumers needs first & foremost & to keep a high standard to serve them faithfully and well.
+    </p>
+  </div>
+  <div class="card">
+    <i class="fa fa-user"></i>
+    <h2>Quality</h2>
+    <p>To uphold the highest standard of craftmanship of our products & services by upgrading & learning.
+    </p>
+  </div>
+  <div class="card">
+    <i class="fa fa-user"></i>
+    <h2>Diversity</h2>
+    <p> Bringing a range of different backgrounds & experiences into a shared environment of equality.
+    </p>
+  </div>
+  <div class="card">
+    <i class="fa fa-user"></i>
+    <h2>Passion</h2>
+    <p>Having a joy for the work itself but also the people around so that we can be innovative & creative.
+    </p>
+  </div>
+  <div class="card">
+    <i class="fa fa-user"></i>
+    <h2>Honesty</h2>
+    <p>To act in a transparent, trustworthy manner that earns the respect of colleagues, customers & the public.</p>
+  </div>
+  <div class="card">
+    <i class="fa fa-user"></i>
+    <h2>Sustainability</h2>
+    <p> We build globally but live  locally with our world & the environment in mind from farm to table.
+    </p>
+  </div>
 </div>
 </div>
-</footer>
-  </script>
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-logo">
+        <img src="images/smaksak_logo.png" alt="" />
+      </div>
+      <div class="flex-footer footer-container">
+        <div class="footer-description">
+          <h2>About Us</h2>
+          <p>
+            Smaksak is a food subscription delivery service based in Jönköping,
+            Sweden. Founded by the Svensson brothers Max and Tim in 2012, it has
+            become the go-to food delivery service companies in Scandinavia.
+            Enjoy the small moments with us.
+          </p>
+          <div class="footer-socials">
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h2>Meals</h2>
+          <ul>
+            <li><a href="#">Meal box delivery</a></li>
+            <li><a href="#">What is in your box?</a></li>
+            <li><a href="#">Personalisation of a box</a></li>
+          </ul>
+          <br />
+          <h2>Get to know</h2>
+          <ul>
+            <li><a href="#">Box offer</a></li>
+            <li><a href="#">Business Offers</a></li>
+            <li><a href="#">Personalisation of a box</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Discover</h2>
+          <ul>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Gift a box</a></li>
+            <li><a href="#">Application</a></li>
+            <li><a href="#">Membership</a></li>
+          </ul>
+          <br />
+          <h2>More info</h2>
+          <ul>
+            <li><a href="#">Meal box delivery</a></li>
+            <li><a href="#">What is in your box?</a></li>
+            <li><a href="#">Personalisation of a box</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contact Us</h2>
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-phone"></i> +46 722 222 222</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-phone"></i> Monday-Friday 10:00-17:00
+                <br />Saturday 12:00-15:00
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

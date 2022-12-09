@@ -1,215 +1,217 @@
-@import url("https://fonts.cdnfonts.com/css/nunito-sans");
-
-html,
-body {
-  margin: 0;
-  background: linear-gradient(#fffbf9 0%, #f8efe6 100%);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-/* Formating fonts and different styles on headlines and paragraphs*/
-h1,
-h2,
-h3 {
-  font-family: lust, serif;
-  font-style: italic;
-  font-weight: 700;
-  margin: 0;
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+  position: relative;
 }
-p {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 14pt;
-  padding: 5px;
-  margin: 0;
+
+.navbar{
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
 }
-h1 {
-  font-size: 40pt;
+.navbar.sticky{
+  background: white;
+  padding: 10px 0;
+}
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-transform: uppercase;
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: gray;
+}
+.banner{
+  background: url("../images/herocloud.png") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.icon{
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+@media (max-width: 1200px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 20px;
+    text-align: left;
+    background: white;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
+}
+
+.logo {
+width: 150px;
+position: absolute;
+left: 50%;
+top: 0;
+content: "";
+margin-left: -75px;
+}
+
+.icons-navbar {
+  position: absolute;
+  left: 80%;
+  top: 0;
+  content: "";
+}
+
+.icons-navbar a {
+  padding: 13px;
+  color: black;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.flex div {
   padding: 20px;
 }
-h2 {
-  font-size: 20pt;
-  padding: 10px;
-}
-h3 {
-  font-size: 12pt;
-  padding: 8px;
-}
-/* Phone version */
-@media only screen and (max-width: 800px) {
-  h1 {
-    font-size: 28pt;
-  }
-  h2 {
-    font-size: 12pt;
-  }
-  h3,
-  p {
-    font-size: 10pt;
-  }
-}
 
-/*
-button class for normal buttons.
-herobutton for the buttons on the hero section.
-*/
-button {
-  border: 0px;
-  transition: background-color 0.3s;
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-right: 20px;
-}
-.button {
-  background-color: #e5d8ca;
-  border: 0px;
-  border-radius: 20px 5px;
-}
-.herobutton {
-  background-color: rgba(255, 250, 246, 0.8);
-  border-radius: 10px;
-  text-align: left;
-  padding: 8px;
-  padding-right: 40px;
-}
-button:hover {
+.smaksakapp {
+  width: 100vw;
+  height: 500px;
   background-color: #eee5dc;
 }
-
-.footer{
-  min-height: 100vh;
-  display: grid;
-  justify-content: end;
-  align-content: end;
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding: 50px 100px;
-  background: white;
+.smaksakapp * {
+  text-align: center;
+  margin: auto;
+  max-width: 50vw;
+  display: block;
 }
-
-footer .container{
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+.review-container {
+  width: 100vw;
+  height: 400px;
+  background-color: #f8efe6;
 }
-
-footer .container .social-media {
-  position: relative;
-  margin-bottom: 15px;
+.review-container * {
+  text-align: center;
+  margin: auto;
+  max-width: 50vw;
+  display: block;
 }
-
-.social-media{
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(4, 50px);
-  grid-gap: 15px;
-}
-
-.social-media li {
-  list-style: none;
-}
-
-.social-media li a {
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  background: #EEE5DC;
-  display: grid;
-  align-content: center;
+/*Our Values*/
+.wrapper {
+  display: flex;
   justify-content: center;
-  text-decoration: none;
-  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.social-media li a:hover{
-  background: #E6D8CA;
+.wrapper h1 {
+  margin: 25px 0;
+  text-align: center;
 }
 
-.social-media li .fa {
-  color: black;
-  font-size: 25px;
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 1000px;
+  margin-top: 30px;
 }
 
-.meals{
-  position: relative;
+.card {
+  min-height: 220px;
+  width: 320px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 4px;
 }
 
-.meals li {
-  list-style: none;
+.card i {
+  margin: 20px;
 }
 
-.meals li a {
-  text-decoration: none;
-  color: black;
-  margin-bottom: 10px;
-  display: inline-block;
+.card h2 {
+  margin-bottom: 12px;
+  text-align: center;
 }
 
-.meals li a:hover{
-  color: grey;
+.card p {
+  text-align: center;
 }
 
-.discover{
-  position: relative;
-}
-
-.discover li {
-  list-style: none;
-}
-
-.discover li a {
-  text-decoration: none;
-  color: black;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-.discover li a:hover{
-  color: grey;
-}
-
-.more-info{
-  position: relative;
-}
-
-.more-info li {
-  list-style: none;
-}
-
-.more-info li a {
-  text-decoration: none;
-  color: black;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-.more-info li a:hover{
-  color: grey;
-}
-
-.contact{
-  position: relative;
-}
-
-.contact li {
-  list-style: none;
-}
-
-.contact li a {
-  text-decoration: none;
-  color: black;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-.contact li a:hover{
-  color: grey;
+@media(max-width: 991px){
+  .wrapper{
+    padding: 25px;
+  }
+  .content-box{
+    flex-direction: column;
+    width: 100%;
+  }
+  .card{
+    min-width: 300px;
+    margin: 10px auto;
+  }
 }

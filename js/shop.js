@@ -108,7 +108,7 @@ function openModal(id) {
   if (width < 1400) {
     content.insertAdjacentHTML(
       "beforeend",
-      "<div id='detail' style='min-height: 60vh;'>" +
+      "<div id='detail' style='min-height: 80vh;'>" +
         "<img src='" +
         img +
         "' style='width: 50vw;' />" +
@@ -166,8 +166,8 @@ function openModal(id) {
         img +
         "' style='width: 25vw;' />" +
         "</div>" +
-        "<h2 class='hide-phone'>Examples of recipes to chose from</h2>" +
         "<div class='recipes'>" +
+        "<div style='width: 30vw;'><h2 class='hide-phone'>Examples of recipes to chose from</h2></div>" +
         "<div>" +
         "<img src='../images/wild-rice-pilaf.jpg' />" +
         "<h3>Wild rice pilaf</h3>" +

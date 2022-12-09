@@ -4,8 +4,8 @@ html,
 body {
   margin: 0;
   background: linear-gradient(#fffbf9 0%, #f8efe6 100%);
-  background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 /* Text css: */
@@ -15,25 +15,23 @@ h3 {
   font-family: lust, serif;
   font-style: italic;
   font-weight: 700;
+  padding: 10px;
   margin: 0;
 }
 p {
   font-family: "Nunito Sans", sans-serif;
   font-size: 14pt;
-  padding: 5px;
+  padding: 10px;
   margin: 0;
 }
 h1 {
   font-size: 40pt;
-  padding: 20px;
 }
 h2 {
   font-size: 20pt;
-  padding: 10px;
 }
 h3 {
   font-size: 12pt;
-  padding: 8px;
 }
 /* Phone version */
 @media only screen and (max-width: 800px) {
@@ -74,4 +72,86 @@ button {
 }
 button:hover {
   background-color: #eee5dc;
+}
+
+footer {
+  overflow-x: hidden;
+}
+
+.flex-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+  background: #fffaf7;
+}
+
+.flex-footer div {
+  padding: 30px;
+  position: relative;
+}
+
+.footer-description {
+  width: 500px;
+}
+
+.footer-container ul {
+  padding: 8px;
+  padding-left: 10px;
+  margin: 0;
+}
+
+.footer-container li {
+  list-style: none;
+  text-align: left;
+}
+
+.footer-container li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-container li a:hover {
+  color: grey;
+}
+
+.footer-socials li {
+  float: left;
+  padding: 8px;
+}
+
+.footer-socials li a {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: #eee5dc;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.footer-socials li a:hover {
+  background: #e6d8ca;
+}
+
+.footer-socials li .fa {
+  color: black;
+  font-size: 25px;
+}
+
+.footer-logo {
+  background: #fffaf7;
+  width: 150px;
+  padding: 60px;
+  position: relative;
+  top: 80px;
+  left: 120px;
+  border-radius: 50%;
+  box-sizing: content-box;
+}
+
+.footer-logo img {
+  width: 150px;
 }
