@@ -15,25 +15,23 @@ h3 {
   font-family: lust, serif;
   font-style: italic;
   font-weight: 700;
+  padding: 10px;
   margin: 0;
 }
 p {
   font-family: "Nunito Sans", sans-serif;
   font-size: 14pt;
-  padding: 5px;
+  padding: 10px;
   margin: 0;
 }
 h1 {
   font-size: 40pt;
-  padding: 20px;
 }
 h2 {
   font-size: 20pt;
-  padding: 10px;
 }
 h3 {
   font-size: 12pt;
-  padding: 8px;
 }
 /* Phone version */
 @media only screen and (max-width: 800px) {
@@ -75,7 +73,7 @@ button {
 button:hover {
   background-color: #eee5dc;
 }
-
+/*
 .footer {
   min-height: 100vh;
   display: grid;
@@ -91,7 +89,6 @@ button:hover {
 footer .container-footer {
   width: 100%;
   display: grid;
-  /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
   grid-gap: 20px;
 }
 
@@ -228,3 +225,4 @@ footer .container-footer .social-media {
 .flex-footer div {
   padding: 20px;
 }
+*/
