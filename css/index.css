@@ -11,6 +11,7 @@
   padding: 0 30px;
   position: relative;
 }
+
 .navbar{
   position: fixed;
   height: 60px;
@@ -26,7 +27,7 @@
 .navbar .content{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
   text-transform: uppercase;
 }
 .navbar .menu-list{
@@ -82,8 +83,8 @@
     left: -100%;
     top: 0px;
     display: block;
-    padding: 40px 0;
-    text-align: center;
+    padding: 40px 20px;
+    text-align: left;
     background: white;
     transition: all 0.3s ease;
   }
