@@ -153,6 +153,7 @@ footer {
   top: 80px;
   left: 120px;
   border-radius: 50%;
+  box-sizing: content-box;
 }
 
 .footer-logo img {
