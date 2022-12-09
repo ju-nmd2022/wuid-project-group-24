@@ -241,6 +241,7 @@ footer {
     text-align: left;
     background: white;
     transition: all 0.3s ease;
+    margin: 0;
   }
   .navbar.show .menu-list {
     left: 0%;
