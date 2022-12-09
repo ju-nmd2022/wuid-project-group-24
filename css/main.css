@@ -175,7 +175,7 @@ footer {
   transition: all 0.3s ease;
 }
 .navbar.sticky {
-  background: white;
+  background: #fffaf7;
   padding: 10px 0;
 }
 .navbar .nav-content {
@@ -210,7 +210,7 @@ footer {
 }
 .nav-icon {
   color: black;
-  font-size: 20px;
+  font-size: 15px;
   cursor: pointer;
   display: none;
 }
@@ -219,6 +219,36 @@ footer {
   right: 30px;
   top: 20px;
 }
+
+.nav-logo {
+  width: 150px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: "";
+  margin-left: -75px;
+}
+
+.icons-navbar {
+  position: absolute;
+  left: 90%;
+  top: 0;
+  content: "";
+  font-size: 25px;
+}
+#hamburger-icon {
+  position: absolute;
+  left: 10%;
+  top: 0;
+  content: "";
+  font-size: 25px;
+}
+
+.icons-navbar a {
+  padding: 4px;
+  color: black;
+}
+
 @media (max-width: 1200px) {
   body.disabled {
     overflow: hidden;
@@ -239,7 +269,7 @@ footer {
     display: block;
     padding: 40px 20px;
     text-align: left;
-    background: white;
+    background: #fffaf7;
     transition: all 0.3s ease;
     margin: 0;
   }
@@ -256,26 +286,8 @@ footer {
   .navbar.show .menu-list li a {
     margin-left: 0px;
   }
+  .icons-navbar {
+    left: 80%;
+  }
 }
 
-.nav-logo {
-  width: 150px;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  content: "";
-  margin-left: -75px;
-}
-
-.icons-navbar {
-  position: absolute;
-  left: 80%;
-  top: 0;
-  content: "";
-  font-size: 25px;
-}
-
-.icons-navbar a {
-  padding: 13px;
-  color: black;
-}
