@@ -64,12 +64,7 @@
   right: 30px;
   top: 20px;
 }
-@media (max-width: 1230px) {
-  .content{
-    padding: 0 60px;
-  }
-}
-@media (max-width: 1150px) {
+@media (max-width: 1200px) {
   body.disabled{
     overflow: hidden;
   }
@@ -101,7 +96,6 @@
   .navbar .menu-list li a{
     font-size: 23px;
     margin-left: -100%;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   .navbar.show .menu-list li a{
     margin-left: 0px;
@@ -117,7 +111,17 @@ content: "";
 margin-left: -75px;
 }
 
+.icons-navbar {
+  position: absolute;
+  left: 80%;
+  top: 0;
+  content: "";
+}
 
+.icons-navbar a {
+  padding: 13px;
+  color: black;
+}
 
 .flex {
   display: flex;
