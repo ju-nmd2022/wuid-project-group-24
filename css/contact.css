@@ -41,7 +41,7 @@ input[type="submit"] {
   color: #1b1b1b;
   padding: 12px 20px;
   border: none;
-  border-radius: 15% 0%;
+  /* border-radius: 15% 0%; */
   cursor: pointer;
 }
 

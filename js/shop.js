@@ -45,7 +45,7 @@ function openModal(id) {
     name = "The regular box";
     text =
       "The everyday regular food box offers both classic and exciting new dishes made with local, in-season ingredients. You can choose from 2-5 portions per serving between 20+ recipes each week. With the box comes the Smaksak app, monthly playlists and other surprises as well as a special invitation to the ambience lives.";
-    img = "../images/smaksakbox1.png";
+    img = "../images/regularbox.png";
   } else if (id == "vegetarian") {
     name = "The vegetarian box";
     text =
