@@ -1,11 +1,18 @@
-.content{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.content {
   max-width: 1250px;
   margin: auto;
   padding: 0 30px;
   position: relative;
 }
 
-.navbar{
+.navbar {
   position: fixed;
   height: 60px;
   width: 100%;
@@ -13,23 +20,23 @@
   padding: 25px 0;
   transition: all 0.3s ease;
 }
-.navbar.sticky{
+.navbar.sticky {
   background: white;
   padding: 10px 0;
 }
-.navbar .content{
+.navbar .content {
   display: flex;
   align-items: center;
   justify-content: left;
   text-transform: uppercase;
 }
-.navbar .menu-list{
+.navbar .menu-list {
   display: inline-flex;
 }
-.menu-list li{
+.menu-list li {
   list-style: none;
 }
-.menu-list li a{
+.menu-list li a {
   color: black;
   font-size: 18px;
   font-weight: 500;
@@ -37,38 +44,38 @@
   text-decoration: none;
   transition: all 0.3s ease;
 }
-.menu-list li a:hover{
+.menu-list li a:hover {
   color: gray;
 }
-.banner{
+.banner {
   background: url("../images/herocloud.png") no-repeat;
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
-.icon{
+.icon {
   color: black;
   font-size: 20px;
   cursor: pointer;
   display: none;
 }
-.menu-list .cancel-btn{
+.menu-list .cancel-btn {
   position: absolute;
   right: 30px;
   top: 20px;
 }
 @media (max-width: 1200px) {
-  body.disabled{
+  body.disabled {
     overflow: hidden;
   }
-  .icon{
+  .icon {
     display: block;
   }
-  .icon.hide{
+  .icon.hide {
     display: none;
   }
-  .navbar .menu-list{
+  .navbar .menu-list {
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -81,28 +88,28 @@
     background: white;
     transition: all 0.3s ease;
   }
-  .navbar.show .menu-list{
+  .navbar.show .menu-list {
     left: 0%;
   }
-  .navbar .menu-list li{
+  .navbar .menu-list li {
     margin-top: 45px;
   }
-  .navbar .menu-list li a{
+  .navbar .menu-list li a {
     font-size: 23px;
     margin-left: -100%;
   }
-  .navbar.show .menu-list li a{
+  .navbar.show .menu-list li a {
     margin-left: 0px;
   }
 }
 
 .logo {
-width: 150px;
-position: absolute;
-left: 50%;
-top: 0;
-content: "";
-margin-left: -75px;
+  width: 150px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  content: "";
+  margin-left: -75px;
 }
 
 .icons-navbar {
@@ -196,15 +203,15 @@ margin-left: -75px;
   text-align: center;
 }
 
-@media(max-width: 991px){
-  .wrapper{
+@media (max-width: 991px) {
+  .wrapper {
     padding: 25px;
   }
-  .content-box{
+  .content-box {
     flex-direction: column;
     width: 100%;
   }
-  .card{
+  .card {
     min-width: 300px;
     margin: 10px auto;
   }
