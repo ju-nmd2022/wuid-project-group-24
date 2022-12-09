@@ -1,106 +1,56 @@
+<<<<<<< Updated upstream
 @import url("https://fonts.cdnfonts.com/css/nunito-sans");
 
 html * {
+=======
+*{
+>>>>>>> Stashed changes
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* Formating fonts and different styles on headlines and paragraphs*/
-h1,
-h2,
-h3 {
-  font-family: lust, serif;
-  font-style: italic;
-  font-weight: 700;
-  margin: 0;
-}
-p {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 14pt;
-  padding: 5px;
-  margin: 0;
 }
-h1 {
-  font-size: 40pt;
-  padding: 20px;
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
 }
-h2 {
-  font-size: 20pt;
-  padding: 10px;
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
 }
-h3 {
-  font-size: 12pt;
-  padding: 8px;
+::-webkit-scrollbar-thumb {
+    background: #888;
 }
-/* Phone version */
-@media only screen and (max-width: 800px) {
-  h1 {
-    font-size: 28pt;
-  }
-  h2 {
-    font-size: 12pt;
-  }
-  h3,
-  p {
-    font-size: 10pt;
-  }
+::selection{
+  background: rgb(0,123,255,0.3);
 }
-
-/*
-button class for normal buttons.
-herobutton for the buttons on the hero section.
-*/
-button {
-  border: 0px;
-  transition: background-color 0.3s;
-  padding-left: 8px;
-  padding-right: 8px;
-  margin-right: 20px;
-}
-.button {
-  background-color: #e5d8ca;
-  border: 0px;
-  border-radius: 20px 5px;
-}
-.herobutton {
-  background-color: rgba(255, 250, 246, 0.8);
-  border-radius: 10px;
-  text-align: left;
-  padding: 8px;
-  padding-right: 40px;
-}
-button:hover {
-  background-color: #eee5dc;
-}
+<<<<<<< Updated upstream
 
 .footer {
   min-height: 100vh;
   display: grid;
   justify-content: end;
   align-content: end;
+=======
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+>>>>>>> Stashed changes
   position: relative;
-  width: 100%;
-  height: auto;
-  padding: 50px 100px;
-  background: #fffaf7;
 }
+<<<<<<< Updated upstream
 
 footer .container {
+=======
+.navbar{
+  position: fixed;
+>>>>>>> Stashed changes
   width: 100%;
-  display: grid;
-  /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
-  grid-gap: 20px;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
 }
-
-footer .container .social-media {
-  position: relative;
-  margin-bottom: 15px;
-}
-
-.footer-description {
-  max-width: 500px;
-}
+<<<<<<< Updated upstream
 
 .social-media {
   margin-top: 20px;
@@ -136,15 +86,28 @@ footer .container .social-media {
 
 .meals {
   position: relative;
+=======
+.navbar.sticky{
+  background: white;
+  padding: 10px 0;
+  box-shadow: 0px 3px 4px 0px grey;
 }
-
-.meals li {
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.navbar .menu-list{
+  display: inline-flex;
+>>>>>>> Stashed changes
+}
+.menu-list li{
   list-style: none;
 }
-
-.meals li a {
-  text-decoration: none;
+.menu-list li a{
   color: black;
+<<<<<<< Updated upstream
   margin-bottom: 10px;
   display: inline-block;
 }
@@ -174,18 +137,31 @@ footer .container .social-media {
 
 .more-info {
   position: relative;
-}
-
-.more-info li {
-  list-style: none;
-}
-
-.more-info li a {
+=======
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
   text-decoration: none;
-  color: black;
-  margin-bottom: 10px;
-  display: inline-block;
+  transition: all 0.3s ease;
 }
+.menu-list li a:hover{
+  color: gray;
+>>>>>>> Stashed changes
+}
+.banner{
+  background: url("../images/herocloud.png") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.icon{
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+<<<<<<< Updated upstream
 
 .more-info li a:hover {
   color: grey;
@@ -193,30 +169,83 @@ footer .container .social-media {
 
 .contact {
   position: relative;
+=======
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
 }
-
-.contact li {
-  list-style: none;
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 60px;
+  }
+>>>>>>> Stashed changes
 }
-
-.contact li a {
-  text-decoration: none;
-  color: black;
-  margin-bottom: 10px;
-  display: inline-block;
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
 }
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+<<<<<<< Updated upstream
 
 .contact li a:hover {
   color: grey;
+=======
+@media (max-width: 868px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: white;
+    transition: all 0.3s ease;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
+>>>>>>> Stashed changes
 }
 
-.logo-footer {
-  width: 180px;
-  position: absolute;
-  left: 160px;
-  bottom: 120px;
+.logo {
+width: 150px;
+position: absolute;
+left: 50%;
+top: 0;
+content: "";
+margin-left: -75px;
 }
 
+<<<<<<< Updated upstream
 .flex {
   display: flex;
   flex-direction: row;
@@ -249,3 +278,5 @@ footer .container .social-media {
   max-width: 50vw;
   display: block;
 }
+=======
+>>>>>>> Stashed changes
