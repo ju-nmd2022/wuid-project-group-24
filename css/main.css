@@ -175,7 +175,7 @@ footer {
   transition: all 0.3s ease;
 }
 .navbar.sticky {
-  background: white;
+  background: #fffaf7;
   padding: 10px 0;
 }
 .navbar .nav-content {
@@ -239,7 +239,7 @@ footer {
     display: block;
     padding: 40px 20px;
     text-align: left;
-    background: white;
+    background: #fffaf7;
     transition: all 0.3s ease;
     margin: 0;
   }
