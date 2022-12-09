@@ -4,19 +4,7 @@
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
 }
-/* custom scroll bar */
-::-webkit-scrollbar {
-    width: 10px;
-}
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-::selection{
-  background: rgb(0,123,255,0.3);
-}
+
 .content{
   max-width: 1250px;
   margin: auto;
@@ -25,6 +13,7 @@
 }
 .navbar{
   position: fixed;
+  height: 60px;
   width: 100%;
   z-index: 2;
   padding: 25px 0;
@@ -33,7 +22,6 @@
 .navbar.sticky{
   background: white;
   padding: 10px 0;
-  box-shadow: 0px 3px 4px 0px grey;
 }
 .navbar .content{
   display: flex;
@@ -81,17 +69,7 @@
     padding: 0 60px;
   }
 }
-@media (max-width: 1100px) {
-  .content{
-    padding: 0 40px;
-  }
-}
-@media (max-width: 900px) {
-  .content{
-    padding: 0 30px;
-  }
-}
-@media (max-width: 868px) {
+@media (max-width: 1150px) {
   body.disabled{
     overflow: hidden;
   }
