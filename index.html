@@ -7,52 +7,47 @@
     <title>Landing page</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/index.css" />
-<<<<<<< Updated upstream
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   </head>
   <body>
-    <!--Hero section starts here-->
-    <section id="hero"></section>
-    <!--Container-->
-    <div class="container">
-      <!--Navbar starts here-->
-      <div class="navbar">
-        <label class="logo">
-          <i class="fa fa-bars"></i>
-        </label>
-        <div class="menu">
-          <ul>
-            <li><a href="hmtl/shop.html">Shop</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="html/story.html">Our Story</a></li>
-            <li><a href="html/contact.html">Contact</a></li>
-            <li>
-              <a href="#"></a
-              ><img src="../images/smaksak_logo.png" alt="smaksak-logo" />
-            </li>
-          </ul>
-          <div class="icons">
-            <a href="#"><i class="fa fa-user"></i></a>
-            <a href="#"><i class="fa fa-user"></i></a>
-          </div>
+    <nav class="navbar">
+      <div class="content">
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
         </div>
+          <a href="index.html"><img class="logo" src="images/smaksak_logo.png" alt=""></a>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="html/shop.html">Shop</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="html/story.html">Our Story</a></li>
+          <li><a href="html/story.html">Contact</a></li>
+        </ul>
       </div>
-    </div>
-    <!--Navbar ends here-->
-    <!--Hero section starts here-->
-    <div class="hero-section">
-      <h1 class="hero-slogan">Never not in season!</h1>
-      <p class="hero-description">
-        Try the Dreamy December box for a glittery season.
-      </p>
-
-      <div class="herobutton">
-        <a href="html/shop.html">EXPLORE OUR BOXES</a>
-      </div>
-    </div>
+    </nav>
+    <div class="banner"></div>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = ()=>{
+        navbar.classList.add("show");
+        menuBtn.classList.add("hide");
+        body.classList.add("disabled");
+      }
+      cancelBtn.onclick = ()=>{
+        body.classList.remove("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+      }
+      window.onscroll = ()=>{
+        this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+      }
+    </script>
 
     <div class="smaksakapp">
       <h1>Get more with the Smaksak app</h1>
@@ -162,49 +157,4 @@
       </div>
     </footer>
   </body>
-</html>
-=======
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="content">
-        <div class="icon menu-btn">
-          <i class="fas fa-bars"></i>
-        </div>
-          <a href="index.html"><img class="logo" src="images/smaksak_logo.png" alt=""></a>
-        <ul class="menu-list">
-          <div class="icon cancel-btn">
-            <i class="fas fa-times"></i>
-          </div>
-          <li><a href="html/shop.html">Shop</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="html/story.html">Our Story</a></li>
-          <li><a href="html/story.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="banner"></div>
-    <script>
-      const body = document.querySelector("body");
-      const navbar = document.querySelector(".navbar");
-      const menuBtn = document.querySelector(".menu-btn");
-      const cancelBtn = document.querySelector(".cancel-btn");
-      menuBtn.onclick = ()=>{
-        navbar.classList.add("show");
-        menuBtn.classList.add("hide");
-        body.classList.add("disabled");
-      }
-      cancelBtn.onclick = ()=>{
-        body.classList.remove("disabled");
-        navbar.classList.remove("show");
-        menuBtn.classList.remove("hide");
-      }
-      window.onscroll = ()=>{
-        this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-      }
-    </script>
-  </body>
   </html>
->>>>>>> Stashed changes
