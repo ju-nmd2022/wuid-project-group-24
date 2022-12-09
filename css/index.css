@@ -14,26 +14,6 @@
   padding: 20px;
 }
 
-.smaksakapp {
-  width: 100vw;
-  height: 500px;
-}
-.smaksakapp * {
-  text-align: center;
-  margin: auto;
-  max-width: 50vw;
-  display: block;
-}
-.review-container {
-  width: 100vw;
-  height: 400px;
-}
-.review-container * {
-  text-align: center;
-  margin: auto;
-  max-width: 50vw;
-  display: block;
-}
 /*Our Values*/
 .wrapper {
   display: flex;
