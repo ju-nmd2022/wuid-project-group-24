@@ -109,14 +109,10 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 15px;
-  align-items: center;
-  /* position: center; */
 }
 .icon i {
   font-size: 8vw;
   padding: 4vw 0;
-  align-items: center;
-  position: center;
 }
 .icon img {
   width: 8vw;
@@ -128,12 +124,8 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 30px;
+  padding: 50px;
   padding-left: 60px;
   padding-right: 60px;
-  text-align: center;
-}
-
-.howitworks {
   text-align: center;
 }
