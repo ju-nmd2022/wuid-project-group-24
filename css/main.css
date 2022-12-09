@@ -202,7 +202,7 @@ footer {
   color: gray;
 }
 .banner {
-  background: url("../images/herocloud.png") no-repeat;
+  background: url("../images/heroindex.png") no-repeat;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -269,7 +269,7 @@ footer {
     display: block;
     padding: 40px 20px;
     text-align: left;
-    background: #fffaf7;
+    background: linear-gradient(#fffbf9 0%, #f8efe6 100%);
     transition: all 0.3s ease;
     margin: 0;
   }
@@ -290,4 +290,3 @@ footer {
     left: 80%;
   }
 }
-
