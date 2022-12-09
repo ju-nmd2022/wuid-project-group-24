@@ -13,60 +13,113 @@
     />
   </head>
   <body>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <h1 class="heading">Contact us</h1>
-    <div class="information flex">
-      <div>
-        <ul>
-          <li><i class="fa fa-building"></i> School of Engineering</li>
-          <br />
-          P.O Box 1026<br />
-          SE-551 11 Jönköping<br />
-          Sweden<br />
-          <br />
-          <li><i class="fa fa-phone"></i><b> Phone:</b> +46 (0)72 22 22 22</li>
-          <br />
-          <li>
-            <b><i class="fa fa-envelope"></i> Email:</b> study@ju.se
-          </li>
-          <br />
-          <b>Visiting address:</b>
-          Gjuterigatan 5, Building E, Jönköping<br />
-          <br />
-          <b>Delivery address:</b>
-          Gjuterigatan 5, 553 18 Jönköping<br />
-          <br />
-          <b>Open hours:</b
-          ><br />
-          Monday-Friday 10:00-17:00<br />
-          Saturday 12:00-15:00
+    <nav class="navbar">
+      <div class="nav-content">
+        <div class="nav-icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+        <a href="index.html"
+          ><img class="nav-logo" src="../images/smaksak_logo.png" alt=""
+        /></a>
+        <div class="icons-navbar">
+          <a href=""><i class="fa fa-user"></i></a>
+          <a href=""><i class="fa fa-shopping-cart"></i></a>
+        </div>
+        <ul class="menu-list">
+          <div class="nav-icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="html/shop.html">Shop</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="html/story.html">Our Story</a></li>
+          <li><a href="html/contact.html">Contact</a></li>
         </ul>
       </div>
-      <div><img class="img" src="../images/map.png" /></div>
-    </div>
-    <h2 class="headlineform">Just say hello!</h2>
-    <div class="container">
-      <form action="action_page.php">
-        <label for="fname"></label>
-        <input
-          type="text"
-          id="fname"
-          name="firstname"
-          placeholder="First name"
-        />
-        <label for="lname"></label>
-        <input type="text" id="lname" name="lastname" placeholder="Last name" />
-        <label for="email"></label>
-        <input type="text" id="email" name="email" placeholder="Email" />
-        <label for="message"></label>
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Message"
-          style="height: 100px"
-        ></textarea>
-        <input class="button" type="submit" value="submit" />
-      </form>
+    </nav>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = () => {
+        navbar.classList.add("show");
+        menuBtn.classList.add("hide");
+        body.classList.add("disabled");
+      };
+      cancelBtn.onclick = () => {
+        body.classList.remove("disabled");
+        navbar.classList.remove("show");
+        menuBtn.classList.remove("hide");
+      };
+      window.onscroll = () => {
+        this.scrollY > 20
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+      };
+    </script>
+
+    <div style="padding-top: 100px">
+      <h1 class="heading">Contact us</h1>
+      <div class="information flex">
+        <div>
+          <ul>
+            <li><i class="fa fa-building"></i> School of Engineering</li>
+            <br />
+            P.O Box 1026<br />
+            SE-551 11 Jönköping<br />
+            Sweden<br />
+            <br />
+            <li>
+              <i class="fa fa-phone"></i><b> Phone:</b> +46 (0)72 22 22 22
+            </li>
+            <br />
+            <li>
+              <b><i class="fa fa-envelope"></i> Email:</b> study@ju.se
+            </li>
+            <br />
+            <b>Visiting address:</b>
+            Gjuterigatan 5, Building E, Jönköping<br />
+            <br />
+            <b>Delivery address:</b>
+            Gjuterigatan 5, 553 18 Jönköping<br />
+            <br />
+            <b>Open hours:</b
+            ><br />
+            Monday-Friday 10:00-17:00<br />
+            Saturday 12:00-15:00
+          </ul>
+        </div>
+        <div><img class="img" src="../images/map.png" /></div>
+      </div>
+      <h2 class="headlineform">Just say hello!</h2>
+      <div class="container">
+        <form action="action_page.php">
+          <label for="fname"></label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="First name"
+          />
+          <label for="lname"></label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Last name"
+          />
+          <label for="email"></label>
+          <input type="text" id="email" name="email" placeholder="Email" />
+          <label for="message"></label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Message"
+            style="height: 100px"
+          ></textarea>
+          <input class="button" type="submit" value="submit" />
+        </form>
+      </div>
     </div>
     <footer>
       <div class="footer-logo">

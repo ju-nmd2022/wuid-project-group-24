@@ -4,8 +4,8 @@
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
 }
-
-.content {
+/*
+.nav-content {
   max-width: 1250px;
   margin: auto;
   padding: 0 30px;
@@ -24,7 +24,7 @@
   background: white;
   padding: 10px 0;
 }
-.navbar .content {
+.navbar .nav-content {
   display: flex;
   align-items: center;
   justify-content: left;
@@ -54,7 +54,7 @@
   background-position: center;
   background-attachment: fixed;
 }
-.icon {
+.nav-icon {
   color: black;
   font-size: 20px;
   cursor: pointer;
@@ -69,10 +69,10 @@
   body.disabled {
     overflow: hidden;
   }
-  .icon {
+  .nav-icon {
     display: block;
   }
-  .icon.hide {
+  .nav-icon.hide {
     display: none;
   }
   .navbar .menu-list {
@@ -103,7 +103,7 @@
   }
 }
 
-.logo {
+.nav-logo {
   width: 150px;
   position: absolute;
   left: 50%;
@@ -124,7 +124,7 @@
   padding: 13px;
   color: black;
 }
-
+*/
 .flex {
   display: flex;
   flex-direction: row;
