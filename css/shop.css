@@ -233,8 +233,3 @@
     height: 750px;
   }
 }
-@media only screen and (max-width: 1200px) {
-  .hero div > p {
-    width: 80vw;
-  }
-}
