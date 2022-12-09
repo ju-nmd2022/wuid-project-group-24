@@ -166,25 +166,6 @@ function openModal(id) {
         img +
         "' style='width: 25vw;' />" +
         "</div>" +
-        "<div class='recipes'>" +
-        "<div style='width: 30vw;'><h2 class='hide-phone'>Examples of recipes to chose from</h2></div>" +
-        "<div>" +
-        "<img src='../images/wild-rice-pilaf.jpg' />" +
-        "<h3>Wild rice pilaf</h3>" +
-        "</div>" +
-        "<div>" +
-        "<img src='../images/lentil-salad.jpg' />" +
-        "<h3>Lentil sallad</h3>" +
-        "</div>" +
-        "<div>" +
-        "<img src='../images/sofritas.jpg' />" +
-        "<h3>Sofritas</h3>" +
-        "</div>" +
-        "<div>" +
-        "<img src='../images/Roasted-VegetablesIMG_0415-760x1140.jpg' />" +
-        "<h3>Roasted vegetables</h3>" +
-        "</div>" +
-        "</div>" +
         "</div>"
     );
   }
