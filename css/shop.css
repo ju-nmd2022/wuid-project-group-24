@@ -66,6 +66,9 @@
   border-radius: 10%;
   width: 350px;
 }
+.products img:hover {
+  cursor: pointer;
+}
 .products div {
   margin: auto;
   text-align: center;
@@ -216,6 +219,11 @@
 
   .hide-phone {
     display: none;
+  }
+
+  .modal-content {
+    max-height: 100%;
+    height: 750px;
   }
 }
 @media only screen and (max-width: 1200px) {

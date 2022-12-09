@@ -1,8 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/nunito-sans");
 
-html
-
-* {
+html * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -76,7 +74,7 @@ button:hover {
   background-color: #eee5dc;
 }
 
-.footer{
+.footer {
   min-height: 100vh;
   display: grid;
   justify-content: end;
@@ -88,7 +86,7 @@ button:hover {
   background: #fffaf7;
 }
 
-footer .container{
+footer .container {
   width: 100%;
   display: grid;
   /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
@@ -104,7 +102,7 @@ footer .container .social-media {
   max-width: 500px;
 }
 
-.social-media{
+.social-media {
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(4, 50px);
@@ -119,7 +117,7 @@ footer .container .social-media {
   display: inline-block;
   width: 48px;
   height: 48px;
-  background: #EEE5DC;
+  background: #eee5dc;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -127,8 +125,8 @@ footer .container .social-media {
   border-radius: 15px;
 }
 
-.social-media li a:hover{
-  background: #E6D8CA;
+.social-media li a:hover {
+  background: #e6d8ca;
 }
 
 .social-media li .fa {
@@ -136,7 +134,7 @@ footer .container .social-media {
   font-size: 25px;
 }
 
-.meals{
+.meals {
   position: relative;
 }
 
@@ -151,11 +149,11 @@ footer .container .social-media {
   display: inline-block;
 }
 
-.meals li a:hover{
+.meals li a:hover {
   color: grey;
 }
 
-.discover{
+.discover {
   position: relative;
 }
 
@@ -170,11 +168,11 @@ footer .container .social-media {
   display: inline-block;
 }
 
-.discover li a:hover{
+.discover li a:hover {
   color: grey;
 }
 
-.more-info{
+.more-info {
   position: relative;
 }
 
@@ -189,11 +187,11 @@ footer .container .social-media {
   display: inline-block;
 }
 
-.more-info li a:hover{
+.more-info li a:hover {
   color: grey;
 }
 
-.contact{
+.contact {
   position: relative;
 }
 
@@ -208,7 +206,7 @@ footer .container .social-media {
   display: inline-block;
 }
 
-.contact li a:hover{
+.contact li a:hover {
   color: grey;
 }
 
@@ -227,4 +225,27 @@ footer .container .social-media {
 }
 .flex div {
   padding: 20px;
+}
+
+.smaksakapp {
+  width: 100vw;
+  height: 500px;
+  background-color: #eee5dc;
+}
+.smaksakapp * {
+  text-align: center;
+  margin: auto;
+  max-width: 50vw;
+  display: block;
+}
+.review-container {
+  width: 100vw;
+  height: 400px;
+  background-color: #f8efe6;
+}
+.review-container * {
+  text-align: center;
+  margin: auto;
+  max-width: 50vw;
+  display: block;
 }

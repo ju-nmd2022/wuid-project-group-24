@@ -4,8 +4,8 @@ html,
 body {
   margin: 0;
   background: linear-gradient(#fffbf9 0%, #f8efe6 100%);
-  background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 /* Text css: */
@@ -18,7 +18,8 @@ h3 {
   padding: 10px;
   margin: 0;
 }
-p {
+p,
+a {
   font-family: "Nunito Sans", sans-serif;
   font-size: 14pt;
   padding: 10px;
