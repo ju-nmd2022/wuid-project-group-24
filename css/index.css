@@ -17,7 +17,6 @@
 .smaksakapp {
   width: 100vw;
   height: 500px;
-  background-color: #eee5dc;
 }
 .smaksakapp * {
   text-align: center;
@@ -28,7 +27,6 @@
 .review-container {
   width: 100vw;
   height: 400px;
-  background-color: #f8efe6;
 }
 .review-container * {
   text-align: center;
@@ -94,4 +92,29 @@
     min-width: 300px;
     margin: 10px auto;
   }
+  .herobutton {
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+  .hero h1 {
+    margin-left: -20px;
+    margin-top: 30px;
+  }
+  .text {
+    display: none;
+  }
+
+}
+
+.banner {
+  background: url("../images/heroindex.png") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero {
+  padding-left: 60px;
+  padding-top: 300px;
 }

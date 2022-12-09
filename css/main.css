@@ -29,7 +29,7 @@ p {
   margin: 0;
 }
 h1 {
-  font-size: 28pt;
+  font-size: 45pt;
 }
 h2 {
   font-size: 18pt;
@@ -39,7 +39,7 @@ h3 {
 }
 @media only screen and (max-width: 850px) {
   h1 {
-    font-size: 18pt;
+    font-size: 25pt;
   }
   h2 {
     font-size: 12pt;
@@ -200,13 +200,6 @@ footer {
 }
 .menu-list li a:hover {
   color: gray;
-}
-.banner {
-  background: url("../images/heroindex.png") no-repeat;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
 .nav-icon {
   color: black;
