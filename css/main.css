@@ -73,46 +73,58 @@ button {
 button:hover {
   background-color: #eee5dc;
 }
-/*
-.footer {
-  min-height: 100vh;
-  display: grid;
-  justify-content: end;
-  align-content: end;
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding: 50px 100px;
+
+footer {
+  overflow-x: hidden;
+}
+
+.flex-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
   background: #fffaf7;
 }
 
-footer .container-footer {
-  width: 100%;
-  display: grid;
-  grid-gap: 20px;
-}
-
-footer .container-footer .social-media {
+.flex-footer div {
+  padding: 30px;
   position: relative;
-  margin-bottom: 15px;
 }
 
 .footer-description {
-  max-width: 500px;
+  width: 500px;
 }
 
-.social-media {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(4, 50px);
-  grid-gap: 15px;
+.footer-container div {
+  position: relative;
 }
 
-.social-media li {
+.footer-container ul {
+  padding: 8px;
+  padding-left: 10px;
+  margin: 0;
+}
+
+.footer-container li {
   list-style: none;
+  text-align: left;
 }
 
-.social-media li a {
+.footer-container li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-container li a:hover {
+  color: grey;
+}
+
+.footer-socials li {
+  float: left;
+  padding: 8px;
+}
+
+.footer-socials li a {
   display: inline-block;
   width: 48px;
   height: 48px;
@@ -124,105 +136,25 @@ footer .container-footer .social-media {
   border-radius: 15px;
 }
 
-.social-media li a:hover {
+.footer-socials li a:hover {
   background: #e6d8ca;
 }
 
-.social-media li .fa {
+.footer-socials li .fa {
   color: black;
   font-size: 25px;
 }
 
-.meals {
+.footer-logo {
+  background: #fffaf7;
+  width: 150px;
+  padding: 60px;
   position: relative;
+  top: 80px;
+  left: 120px;
+  border-radius: 50%;
 }
 
-.meals li {
-  list-style: none;
+.footer-logo img {
+  width: 150px;
 }
-
-.meals li a {
-  text-decoration: none;
-  color: black;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-.meals li a:hover {
-  color: grey;
-}
-
-.discover {
-  position: relative;
-}
-
-.discover li {
-  list-style: none;
-}
-
-.discover li a {
-  text-decoration: none;
-  color: black;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-.discover li a:hover {
-  color: grey;
-}
-
-.more-info {
-  position: relative;
-}
-
-.more-info li {
-  list-style: none;
-}
-
-.more-info li a {
-  text-decoration: none;
-  color: black;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-.more-info li a:hover {
-  color: grey;
-}
-
-.contact {
-  position: relative;
-}
-
-.contact li {
-  list-style: none;
-}
-
-.contact li a {
-  text-decoration: none;
-  color: black;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-.contact li a:hover {
-  color: grey;
-}
-
-.logo-footer {
-  width: 180px;
-  position: absolute;
-  left: 160px;
-  bottom: 120px;
-}
-
-.flex-footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: left;
-}
-.flex-footer div {
-  padding: 20px;
-}
-*/
