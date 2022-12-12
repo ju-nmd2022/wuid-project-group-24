@@ -101,18 +101,15 @@
 /* icon background for div */
 .icon {
   background-color: #eee5dc;
-  height: 15vw;
-  width: 15vw;
+  height: 200px;
+  width: 200px;
   border: 0px;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 15px;
-}
-.icon i {
-  font-size: 8vw;
-  padding: 4vw 0;
+  margin: auto;
 }
 .icon img {
   width: 8vw;
@@ -122,10 +119,19 @@
 .content {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 50px;
   padding-left: 60px;
   padding-right: 60px;
   text-align: center;
+}
+
+.content > div {
+  margin: auto;
+}
+
+.howitworks {
+  text-align: center;
+  padding-top: 70px;
 }
